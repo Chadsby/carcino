@@ -1,0 +1,82 @@
+productionbuffs = {
+productionbuffs1 = {
+        icon = generic_propaganda
+
+        ai_will_do = {
+            factor = 0
+        }
+
+        visible = {
+            	always = yes
+        }
+
+	allowed = { 
+		NOT = {
+			has_country_flag = productionbuffs_2
+		}
+	}
+
+        available = {
+			NOT = {
+				has_country_flag = productionbuffs_2
+			}	
+        }
+
+        complete_effect = {
+			set_country_flag = productionbuffs_1
+        }
+
+        modifier = {
+        		production_factory_max_efficiency_factor = 0.5
+			line_change_production_efficiency_factor = 0.5
+			production_factory_efficiency_gain_factor = 0.5
+			production_factory_start_efficiency_factor = 0.5
+        }
+
+        fire_only_once = yes
+	days_remove = 99999
+	
+}
+
+productionbuffs2 = {
+
+        icon = generic_propaganda
+
+        ai_will_do = {
+            factor = 0
+        }
+
+        visible = {
+            	always = yes
+        }
+
+	allowed = { 
+		NOT = {
+			has_country_flag = productionbuffs_1
+		}	
+	}
+
+        available = {
+		NOT = {
+			has_country_flag = productionbuffs_1
+		}		
+        }
+
+        complete_effect = {
+			set_country_flag = productionbuffs_2
+        }
+
+        modifier = {
+        	production_factory_max_efficiency_factor = 1.0
+			line_change_production_efficiency_factor = 1.0
+			production_factory_efficiency_gain_factor = 1.0
+			production_factory_start_efficiency_factor = 1.0
+        }
+
+        fire_only_once = yes
+	days_remove = 99999
+	
+}
+
+
+}
