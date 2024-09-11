@@ -1,0 +1,78 @@
+fasterconstruction = {
+fasterconstruction1 = {
+        icon = generic_propaganda
+
+        ai_will_do = {
+            factor = 0
+        }
+
+        visible = {
+            	always = yes
+        }
+
+	allowed = { 
+		NOT = {
+			has_country_flag = fasterconstruction_2
+		}
+	}
+
+        available = {
+			NOT = {
+				has_country_flag = fasterconstruction_2
+			}	
+        }
+
+        complete_effect = {
+			set_country_flag = fasterconstruction_1
+        }
+
+        modifier = {
+        	production_speed_buildings_factor = 0.5
+            industry_repair_factor = 0.5
+        }
+
+        fire_only_once = yes
+	days_remove = 99999
+	
+}
+
+fasterconstruction2 = {
+
+        icon = generic_propaganda
+
+        ai_will_do = {
+            factor = 0
+        }
+
+        visible = {
+            	always = yes
+        }
+
+	allowed = { 
+		NOT = {
+			has_country_flag = fasterconstruction_1
+		}	
+	}
+
+        available = {
+		NOT = {
+			has_country_flag = fasterconstruction_1
+		}		
+        }
+
+        complete_effect = {
+			set_country_flag = fasterconstruction_2
+        }
+
+        modifier = {
+        	production_speed_buildings_factor = 1.0
+            industry_repair_factor = 1.0
+        }
+
+        fire_only_once = yes
+	days_remove = 99999
+	
+}
+
+
+}
