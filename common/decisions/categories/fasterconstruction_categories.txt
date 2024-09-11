@@ -1,6 +1,0 @@
-fasterconstruction = {
-	icon = generic_propaganda
-	
-	visible = {
-	}
-}

@@ -1,6 +1,0 @@
-productionbuffs = {
-	icon = generic_propaganda
-	
-	visible = {
-	}
-}
